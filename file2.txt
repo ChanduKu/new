@@ -1,0 +1,1 @@
+this second file is add to the repo using stagin concept for that first i need to use add after that i should check for the file is in stagin area or not usig git status file
