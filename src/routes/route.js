@@ -14,10 +14,8 @@ router.get("/test-me", function (req, res) {
 // router.get("/getUsersData", UserController.getUsersData)
 
 router.post("/createBook", BookController.createBook  )
-
-router.get("/getBooksData", BookController.getBooksData)
-router.get("/yea",BookController.yearsData)
-router.get("/n",BookController.ind)
-router.get("/randomBook",BookController.rando)
-router.get("/randomInput",BookController.dates)
+router.post("/Author",UserController.createUser)
+router.post("/name",UserController.list)
+router.get("/updates",BookController.udpdate)
+router.get("/name",UserController.name)
 module.exports = router;
