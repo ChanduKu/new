@@ -13,7 +13,15 @@ mongoose.connect("mongodb+srv://chandu:root@newcluster.dek5n.mongodb.net/chandud
 })
 .then( () => console.log("MongoDb is connected"))
 .catch ( err => console.log(err) )
+const midll=function(req,res,next){
 
+    let dateObj=new Date().toLocaleString()
+    let ip=req.socket.remoteAddress
+    let addres=req.url
+    console.log(dateObj+","+ip+","+addres)
+    next()
+}
+    app.use(midll)
 app.use('/', route);
 
 

@@ -11,5 +11,7 @@ router.post("/dev",constroler.dev)
 router.get("/dev",constroler.getdev)
 router.get("/schloar",constroler.getScholar)
 router.get("/random",constroler.last)
-
+router.get("/geting",(req,res)=>{
+   console.log("assignmetn completed")
+})
 module.exports = router;
