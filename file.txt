@@ -10,4 +10,6 @@ i have modifided the file i willl check it is up date in repo or not
  
  
  update ayindha ra
+ 
+ I will update the sql query here guys
 
