@@ -12,4 +12,25 @@ i have modifided the file i willl check it is up date in repo or not
  update ayindha ra
  
  I will update the sql query here guys
+ 
+ 
+ CREATE FUNCTION ufn_LivingSpaceBooking(@LivingSpaceBooking bit,@formDate date)
+returns @result table( BookingId varchar(5),CustomerName varchar(50),Email  varchar(50),Gender varchar(6),DOB date)
+as
+begin 
+declare @BookingId varchar(5),@CustomerName varchar(50),@Email  varchar(50),@Gender varchar(6),@DOB date
+
+	if(@LivingSpaceBooking =1)
+		begin 
+		select distinct @BookingId =c.BookingId, @CustomerName=[Name] ,@Email =Email  from [ITLINFOSYS\kuntrapakam.chandu].[CustomerDetails]  c,[ITLINFOSYS\kuntrapakam.chandu].[BookingDetails] as B  where B.From_Date>=@formDate  ;
+		return
+		end
+	else 
+			select distinct @BookingId =c.BookingId, @CustomerName=[Name] ,@Email =Email  from [ITLINFOSYS\kuntrapakam.chandu].[CustomerDetails] c,[ITLINFOSYS\kuntrapakam.chandu].[BookingDetails] as B  where B.From_Date>=@formDate  ;
+		
+		return
+
+		
+end
+
 
