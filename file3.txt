@@ -1,1 +1,83 @@
-this is tird file add to the repo in branc dev and then branch chandu/file3 branch 
+ls -a (-a will shows the hidden files )
+
+ls -l (r- readable ,w-writable ,x-accesable)
+
+ls -i (inode number (-i))
+
+ls -R  (-r will help to show the subdirectary)
+
+ls -t (sorted order)
+
+ls -1 (list the file one by one)
+
+ls -a (includes the filed also)
+
+ls -d (show the subfolders )
+
+ls -t1
+
+pwd (show the current working directry)
+
+mkdir (make directry)
+
+rmdir (remove the directry only applicable for empty directary)
+
+touch filename(it is used to crate empty file )
+
+rm filename(it remove the file)
+
+rm -r (recurisvely delet the every file and sub directory )
+
+
+cal -s(-s is strading day of the calender)
+
+cal -3 (this will return the previous,prsenet ,futere month)
+
+cal -y (entire year)
+
+cal -j (it show continious count of the year for entire year add 'y' after the j)
+
+date (dd mm time year)
+
+date+"%a %d" (%a for curent day name, %d current day name)
+
+date+"%A (it returns entire day name %b for month name)
+
+date+"%c" (current date and current time)
+
+date+"%C" (current century)
+
+date+"%t" (only time )
+
+date+"%r" (12 hours formate)
+
+daet+"%x" (it will return only date for X it shows time)
+
+who -a (it display all previous login deatials)
+
+who -q (last logout time)
+
+who -m (who loged in )
+
+uname (os name)
+
+uname -p (processer architure)
+
+uname -s (kurnel name)
+
+uname -r (kurnel relase date)
+
+uname -v (kurnel version)
+
+uname -n (host name)
+
+eco "display" (print function)
+
+eco -k "new line comment \n. of"
+
+cat -n (-n add the line number to the content of the file )
+
+cat -b (-b will not add the number for empty line )
+
+pipline(|)
+
