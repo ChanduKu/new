@@ -1,1 +1,402 @@
-this second file is add to the repo using stagin concept for that first i need to use add after that i should check for the file is in stagin area or not usig git status file
+
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[a-z A-Z]*" regEx.txt
+1233
+Asldfjld234
+1456#23@
+lajsdflj
+@dlasjdl$lsdfj
+data
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[a-z A-Z]" regEx.txt
+Asldfjld234
+lajsdflj
+@dlasjdl$lsdfj
+data
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[j$]" regEx.txt
+Asldfjld234
+lajsdflj
+@dlasjdl$lsdfj
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ vi finalEx.txt
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ cat finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+@kka
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+123456
+Num@ric
+nAVEEN
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[A-Z]" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+Num@ric
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[a-z]" finalEx.txt
+nAVEEN
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[a-z]*" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+@kka
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+123456
+Num@ric
+nAVEEN
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[a-z]$" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+@kka
+VijayawadaSimham
+Num@ric
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[0-9]$" finalEx.txt
+Create335
+123456
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[0-9]" finalEx.txt
+Create335
+123456
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[0-9]" finalEx.txt
+123456
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[@]" finalEx.txt
+@kka
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[c-z]" finalEx.txt
+nAVEEN
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[C-Z]" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+Num@ric
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[a-z A-Z]*[0-9]*" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+@kka
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+123456
+Num@ric
+nAVEEN
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[a-z A-Z]*[0-9]" finalEx.txt
+Create335
+123456
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[a-z A-Z]" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+Num@ric
+nAVEEN
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[a-z A-Z]*[0-9]" finalEx.txt
+Create335
+123456
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ vi finalEx.txt
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[a-z A-Z]*[0-9]" finalEx.txt
+Create335
+123456
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[0-9]$" finalEx.txt
+Create335
+123456
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[0-9]" finalEx.txt
+*Create335
+123456
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[0-9]*[A-Z]" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+Num@ric
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[0-9]*[A-Z]" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+Num@ric
+nAVEEN
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[0-9]*[A-Z]" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+Num@ric
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[0-9]*[A-Z]$" finalEx.txt
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[0-9]*[A-Z]$" finalEx.txt
+SmallEndinG
+nAVEEN
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[A-Z]$" finalEx.txt
+SmallEndinG
+nAVEEN
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[a-z]" finalEx.txt
+nAVEEN
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[A-Z]" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+Num@ric
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[A-Z]*" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+@kka
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+123456
+Num@ric
+nAVEEN
+StaingEnding8
+
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "R^[A-Z]*" finalEx.txt
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "R[A-Z]*" finalEx.txt [D
+finalEx.txt:Rajeswari
+grep: [D: No such file or directory
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "R*" finalEx.txt [D
+finalEx.txt:LingaSwami
+finalEx.txt:Chandu
+finalEx.txt:Rajeswari
+finalEx.txt:Devi
+finalEx.txt:@kka
+finalEx.txt:VijayawadaSimham
+finalEx.txt:Evianni&
+finalEx.txt:Create335
+finalEx.txt:SmallEndinG
+finalEx.txt:123456
+finalEx.txt:Num@ric
+finalEx.txt:nAVEEN
+finalEx.txt:StaingEnding8
+finalEx.txt:
+grep: [D: No such file or directory
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "R*" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+@kka
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+123456
+Num@ric
+nAVEEN
+StaingEnding8
+
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "R" finalEx.txt
+Rajeswari
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ vi finalEx.txt
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "R" finalEx.txt
+Rajeswari
+R1234
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "R[a-z]" finalEx.txt
+Rajeswari
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "[a-z]" finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+@kka
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+Num@ric
+nAVEEN
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "S[a-z]" finalEx.txt
+LingaSwami
+VijayawadaSimham
+SmallEndinG
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "S[a-z]*" finalEx.txt
+LingaSwami
+VijayawadaSimham
+SmallEndinG
+StaingEnding8
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ cat finalEx.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+@kka
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+123456
+Num@ric
+nAVEEN
+StaingEnding8
+R1234
+
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ grep "^[0-9]" finalEx.txt
+123456
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ vi filename.sh
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ chmod +x filename.sh
+chmod: changing permissions of 'filename.sh': Permission denied
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ vi filename.sh
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ cat finalEx.txt > correctOrNot.txt
+
+kuntrapakam.chandu@MYSJ2S6BRL-036 /cygdrive/z/Reskill/day3
+$ cat correctOrNot.txt
+LingaSwami
+Chandu
+Rajeswari
+Devi
+@kka
+VijayawadaSimham
+Evianni&
+Create335
+SmallEndinG
+123456
+Num@ric
+nAVEEN
+StaingEnding8
+R1234
