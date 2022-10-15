@@ -54,3 +54,29 @@ do
         ((j++))
 done
 
+
+Basic arthamatic operations 
+
+a=10
+b=20
+c=$a + $b
+echo `expr $a - $b`
+echo `expr $a % $b`
+echo `expr $a \* $b`
+
+while example 
+
+
+a=(10 40 34 "chandu" 541 "somthing else" )
+echo ${#a[*]}  #this ${#a[*]} return the lenght of an array
+c=0
+while [ $c -lt ${#a[*]} ]
+do
+        echo " $c this line will excute upto the lenght of the array , which is given in the code"
+        ((c++))
+done
+
+echo " --> the array is ( ${a[*]} )"
+
+
+
