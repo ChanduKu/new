@@ -1,0 +1,56 @@
+Finding array element is even or odd using while loop 
+
+arr=( 2 3 5 6 7 8 9 )
+c=0
+while [ $c -lt ${#arr[*]} ]
+do
+
+        if [ $(expr ${arr[$c]} % 2) != 0 ]
+        then
+                echo " ${arr[$c]} is an odd Number"
+        else
+                echo " ${arr[$c]} is an even number"
+        fi
+        ((c++))
+done
+
+Finding array element is odd or even using while for loop 
+
+arr=( 2 4 9 13 16 18 20 )
+for i in ${arr[*]}
+do
+        if [ $(expr $i % 2) != 0 ]
+        then
+                echo " $i is an odd Number"
+        else
+                echo " $i is an even number"
+        fi
+done
+
+printing the even and odd number upto user input 
+
+echo "Enter the number"
+read n
+i=1
+echo " odd Numbers are ~ "
+
+while [ $i -le $n ]
+do
+        if [ $(expr $i % 2 ) != 0 ]
+        then
+                echo "  $i"
+        fi
+        ((i++))
+done
+
+j=1
+echo " even Number are ~ "
+while [ $j -le $n ]
+do
+        if [ $(expr $j % 2 ) == 0 ]
+        then
+                echo "  $j"
+        fi
+        ((j++))
+done
+
