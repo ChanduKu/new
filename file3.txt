@@ -81,3 +81,36 @@ cat -b (-b will not add the number for empty line )
 
 pipline(|)
 
+past is used to merge two files
+
+uniq -u ( shows only no duplicates )
+
+uniq -d (show only duplicate values)
+
+uniq sample (show remove duplicate values)
+
+uniq -c (it show the count of the word)
+
+Note for unique to work the file should be shorted first 
+
+
+day four pattern matching comments:
+
+grep 'chars' <filename> (this is case sensitive)
+
+grep -i 'chas' <filename> (-i is to igone the case sensitve)
+
+grep -ni 'chars' <filename> (-ni ignore the casesentive and add the file line number)
+
+grep -xi 'chars' <filename> (-xi this matches entire the chars matchig  )
+
+grep -c 'chars' <filename> (-c it show the number of time it is repeated in the file)
+
+grep -v 'char' <filename> (-v except that chars it will display all the remaining line in the file)
+
+grep -E 'chars|chars' <filename> (-E extended grep this help us to find more than one pattern)
+
+grep 'ap[hdg]' <filename> ([hdg] ,[<this brakets we can write the regex] this is optional chars to include in the string)
+
+
+
