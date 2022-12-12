@@ -20,3 +20,4 @@ ll=LinkedList()
 ll.append(10)
 ll.append('20')
 ll.disp()
+https://www.youtube.com/watch?v=o8tWJCFWEPU
